@@ -4,6 +4,7 @@
  * @LastEditTime: 2024-10-28 11:56:56
  * @Description:
  */
+import { addDynamicIconSelectors } from '@iconify/tailwind';
 import type { Config } from 'tailwindcss';
 import TailwindcssAnimate from 'tailwindcss-animate';
 const config: Config = {
@@ -64,6 +65,6 @@ const config: Config = {
       }
     }
   },
-  plugins: [TailwindcssAnimate]
+  plugins: [TailwindcssAnimate, addDynamicIconSelectors()]
 };
 export default config;
