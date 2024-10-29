@@ -54,8 +54,10 @@ const components: { title: string; href: string; description: string }[] = [
 
 export default function Header() {
   return (
-    <NavigationMenu className='sticky top-0 z-10 w-full flex-none py-3'>
-      <Image src={Logo} alt='logo' width={30} height={30} className='mr-4' />
+    <NavigationMenu className='sticky top-0 z-10 w-full flex-none bg-black py-3'>
+      <Link href='/'>
+        <Image src={Logo} alt='logo' width={30} height={30} className='mr-4' />
+      </Link>
       <NavigationMenuList>
         <NavigationMenuItem>
           <NavigationMenuTrigger>Getting started</NavigationMenuTrigger>

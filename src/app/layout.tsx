@@ -36,13 +36,13 @@ export default function RootLayout({
       <head>
         <link rel='icon' type='image/svg+xml' href={logo.src} />
       </head>
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} overflow-y-auto overflow-x-hidden antialiased`}
+      >
         <ThemeProvider attribute='class' defaultTheme='dark' enableSystem disableTransitionOnChange>
-          <div className='m-auto flex h-screen max-w-screen-xl flex-col items-center justify-start overflow-y-auto overflow-x-hidden'>
+          <div className='m-auto flex min-h-screen max-w-screen-xl flex-col items-center justify-start'>
             <Header />
-            <div className='flex w-full flex-auto items-start overflow-hidden px-[2em]'>
-              {children}
-            </div>
+            <div className='flex h-full w-full items-start px-[2em]'>{children}</div>
           </div>
         </ThemeProvider>
       </body>

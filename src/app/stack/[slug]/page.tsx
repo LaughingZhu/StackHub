@@ -17,7 +17,10 @@ export default async function Stack({ params }: { params: Promise<Params> }) {
   const stacks = STACK_DATA.find((item) => item.name === slug);
   const formatStacks = formatDataByCategory(stacks?.children || []);
   return (
-    <>
+    <div
+      style={{ height: 'calc(100vh - 60px)' }}
+      className='flex h-full w-full justify-start overflow-y-auto'
+    >
       <Aside slug={slug} />
       <div className='z-0 ml-4 flex flex-auto overflow-y-auto overflow-x-hidden'>
         {!stacks ? (
@@ -37,6 +40,6 @@ export default async function Stack({ params }: { params: Promise<Params> }) {
           </div>
         )}
       </div>
-    </>
+    </div>
   );
 }
