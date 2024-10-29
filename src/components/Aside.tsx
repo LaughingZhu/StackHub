@@ -1,7 +1,7 @@
 /*
  * @Date: 2024-10-28 13:31:14
  * @LastEditors: LaughingZhu
- * @LastEditTime: 2024-10-29 16:58:29
+ * @LastEditTime: 2024-10-29 23:44:58
  * @Description:
  */
 'use client';
@@ -11,7 +11,7 @@ import Link from 'next/link';
 
 export default function Aside({ slug }: { slug: string }) {
   return (
-    <aside className='hidden h-full w-[200px] flex-none flex-col justify-start overflow-y-auto py-4 md:flex'>
+    <aside className='hidden h-full w-[200px] flex-none flex-col justify-start overflow-y-auto py-4 md:flex sticky top-[76px] '>
       {AsideData.map((item) => (
         <Link
           key={item.name}

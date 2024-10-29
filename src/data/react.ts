@@ -1,7 +1,7 @@
 /*
  * @Date: 2024-10-28 13:56:27
  * @LastEditors: LaughingZhu
- * @LastEditTime: 2024-10-29 15:54:33
+ * @LastEditTime: 2024-10-29 21:48:02
  * @Description:
  */
 import { DateCategory } from '@/types/data';
@@ -45,6 +45,20 @@ export default [
       stars: '29.8k',
       forks: '2.5k',
       owner: 'Remix'
+    }
+  },
+  {
+    name: 'Gatsby',
+    desc_zh:
+      'Gatsby 是一个基于React ，用于搭建静态站点的开源框架，用于帮助开发者构建运行速度极快的网站。',
+    home: 'https://www.gatsbyjs.com/docs/quick-start/',
+    category: DateCategory.Framework,
+    logo: 'https://www.gatsbyjs.com/favicon-32x32.png',
+    repoInfo: {
+      github: 'https://github.com/gatsbyjs/gatsby',
+      stars: '55.3k',
+      forks: '10.3k',
+      owner: 'Gatsby'
     }
   },
   {

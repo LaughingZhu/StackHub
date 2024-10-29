@@ -1,7 +1,7 @@
 /*
  * @Date: 2024-10-28 13:56:27
  * @LastEditors: LaughingZhu
- * @LastEditTime: 2024-10-29 16:04:25
+ * @LastEditTime: 2024-10-29 23:25:15
  * @Description:
  */
 import { DateCategory } from '@/types/data';
@@ -12,7 +12,6 @@ export default [
     home: 'https://cn.vuejs.org/',
     category: DateCategory.Framework,
     logo: 'https://cn.vuejs.org/logo.svg',
-
     repoInfo: {
       github: 'https://github.com/vuejs/t',
       stars: '47.4k',
@@ -27,12 +26,25 @@ export default [
     home: 'https://nuxt.com/',
     category: DateCategory.Framework,
     logo: 'https://nuxt.com/icon.png',
-
     repoInfo: {
       github: 'https://github.com/nuxt/nuxt',
       stars: '54.7k',
       forks: '5k',
       owner: 'Nuxt'
+    }
+  },
+  {
+    name: 'Element Plus',
+    desc_zh:
+      '基于 Vue 3，面向设计师和开发者的组件库',
+    home: 'https://nuxt.com/',
+    category: DateCategory.Framework,
+    logo: 'https://element-plus.org/images/element-plus-logo-small.svg',
+    repoInfo: {
+      github: 'https://github.com/element-plus/element-plus',
+      stars: '24.4k',
+      forks: '16.4k',
+      owner: 'Element Plus'
     }
   },
   {
@@ -42,7 +54,6 @@ export default [
     home: 'https://primevue.org/',
     category: DateCategory.Ui,
     logo: 'https://primevue.org/favicon.ico',
-
     repoInfo: {
       github: 'https://github.com/primefaces/primevue',
       stars: '10.4k',

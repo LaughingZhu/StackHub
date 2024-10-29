@@ -1,7 +1,7 @@
 /*
  * @Date: 2024-10-28 15:08:09
  * @LastEditors: LaughingZhu
- * @LastEditTime: 2024-10-29 16:58:23
+ * @LastEditTime: 2024-10-29 23:44:20
  * @Description:
  */
 import Aside from '@/components/Aside';
@@ -18,11 +18,11 @@ export default async function Stack({ params }: { params: Promise<Params> }) {
   const formatStacks = formatDataByCategory(stacks?.children || []);
   return (
     <div
-      style={{ height: 'calc(100vh - 60px)' }}
-      className='flex h-full w-full justify-start overflow-y-auto'
+      
+      className='flex h-full w-full justify-start'
     >
       <Aside slug={slug} />
-      <div className='z-0 ml-4 flex flex-auto overflow-y-auto overflow-x-hidden'>
+      <div className='z-0 ml-4 flex flex-auto  overflow-x-hidden'>
         {!stacks ? (
           <div>null</div>
         ) : (

@@ -1,7 +1,7 @@
 /*
  * @Date: 2024-10-28 13:56:27
  * @LastEditors: LaughingZhu
- * @LastEditTime: 2024-10-29 15:53:56
+ * @LastEditTime: 2024-10-29 23:27:49
  * @Description:
  */
 import { DateCategory } from '@/types/data';
@@ -23,6 +23,20 @@ export default [
   {
     name: 'UnoCSS',
     desc_zh:
+      '完全无样式、完全可访问的 UI 组件，旨在与 Tailwind CSS 完美集成。',
+    home: 'https://headlessui.com/',
+    category: DateCategory.Ui,
+    logo: 'https://headlessui.com/favicon.ico',
+    repoInfo: {
+      github: 'https://github.com/tailwindlabs/headlessui',
+      stars: '26k',
+      forks: '1.1k',
+      owner: 'Tailwind Labs'
+    }
+  },
+  {
+    name: 'UnoCSS',
+    desc_zh:
       'UnoCSS 是一个即时原子化CSS引擎，它可以让你用简短的类名来控制元素的样式，而不需要写复杂的CSS代码。',
     home: 'https://unocss.dev/',
     category: DateCategory.Ui,
@@ -33,5 +47,5 @@ export default [
       forks: '835',
       owner: 'UnoCSS'
     }
-  }
+  },
 ];
