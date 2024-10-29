@@ -1,5 +1,6 @@
 import { BackgroundBeamsWithCollision } from '@/components/BackgroundCollision';
 import { Button } from '@/components/ui/button';
+import Link from 'next/link';
 
 /*
  * @Date: 2024-10-28 11:33:48
@@ -22,9 +23,15 @@ export default function Home() {
         </div>
       </h2>
 
-      <div className='mt-20 grid gap-4 sm:grid-flow-row md:grid-flow-col'>
-        <Button>Documentation</Button>
-        <Button>Github</Button>
+      <div className='mt-20 grid grid-flow-col gap-8'>
+        <Button size='lg' variant='secondary' className='text-lg font-bold'>
+          <Link href='/stack/react'>Find Stacks</Link>
+        </Button>
+        <Button size='lg' className='text-lg font-bold'>
+          <a href='https://github.com/LaughingZhu/StackHub' target='_blank'>
+            Github
+          </a>
+        </Button>
       </div>
     </BackgroundBeamsWithCollision>
   );
