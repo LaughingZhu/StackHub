@@ -1,46 +1,31 @@
 /*
  * @Date: 2024-10-28 13:31:14
  * @LastEditors: LaughingZhu
- * @LastEditTime: 2024-10-29 15:03:09
+ * @LastEditTime: 2024-10-29 16:58:29
  * @Description:
  */
 'use client';
 import AsideData from '@/data/index';
+import { cn } from '@/lib/utils';
 import Link from 'next/link';
 
-export default function Aside() {
+export default function Aside({ slug }: { slug: string }) {
   return (
-    <aside className='ld:w-[240px] hidden h-full w-[220px] flex-none flex-col justify-start overflow-auto py-2 md:flex'>
+    <aside className='hidden h-full w-[200px] flex-none flex-col justify-start overflow-y-auto py-4 md:flex'>
       {AsideData.map((item) => (
-        <div key={item.name} className='flex w-full flex-col items-start justify-start'>
-          <Link
-            href={`/stack/${item.name}`}
-            className='w-full transform-gpu cursor-pointer text-xl transition-all hover:translate-x-1 hover:text-emerald-500'
-          >
+        <Link
+          key={item.name}
+          href={`/stack/${item.name}`}
+          className={cn(
+            'mt-1 flex w-full transform-gpu cursor-pointer flex-col items-start justify-start rounded-lg pl-4 text-xl leading-relaxed transition-all hover:bg-gray-900 hover:text-emerald-500',
+            slug === item.name ? 'text-emerald-500' : '222'
+          )}
+        >
+          <span className='inline-block w-full transition-all hover:translate-x-1'>
             {item.name}
-          </Link>
-        </div>
+          </span>
+        </Link>
       ))}
-      {/* {[1, 2, 3, 4, 5, 23, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 2, 2, 2, 2].map((item, index) => (
-        <div key={index} className='flex w-full flex-col items-start justify-start'>
-          <Link
-            href=''
-            className='w-full transform-gpu cursor-pointer text-xl transition-all hover:translate-x-1 hover:text-emerald-500'
-          >
-            {item}
-          </Link>
-        </div>
-      ))}
-      {[1, 2, 3, 4, 5, 23, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 2, 2, 2, 2].map((item, index) => (
-        <div key={index} className='flex w-full flex-col items-start justify-start'>
-          <Link
-            href=''
-            className='w-full transform-gpu cursor-pointer text-xl transition-all hover:translate-x-1 hover:text-emerald-500'
-          >
-            {item}
-          </Link>
-        </div>
-      ))} */}
     </aside>
   );
 }

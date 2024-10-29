@@ -1,7 +1,7 @@
 /*
  * @Date: 2024-10-28 15:36:46
  * @LastEditors: LaughingZhu
- * @LastEditTime: 2024-10-29 13:57:33
+ * @LastEditTime: 2024-10-29 15:55:31
  * @Description:
  */
 
@@ -10,11 +10,11 @@ export interface DataItem {
   desc_zh: string;
   home: string;
   category: DateCategory;
+  logo: string;
   repoInfo: {
     github: string;
     stars: string;
     forks: string;
-    logo: string;
     owner: string;
   };
 }

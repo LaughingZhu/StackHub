@@ -1,5 +1,6 @@
-'use client';
+// 'use client';
 
+import Image from 'next/image';
 import Link from 'next/link';
 import * as React from 'react';
 
@@ -13,7 +14,7 @@ import {
   navigationMenuTriggerStyle
 } from '@/components/ui/navigation-menu';
 import { cn } from '@/lib/utils';
-
+import Logo from '/public/stackhub.png';
 const components: { title: string; href: string; description: string }[] = [
   {
     title: 'Alert Dialog',
@@ -53,7 +54,8 @@ const components: { title: string; href: string; description: string }[] = [
 
 export default function Header() {
   return (
-    <NavigationMenu className='sticky top-0 w-full flex-none py-3'>
+    <NavigationMenu className='sticky top-0 z-10 w-full flex-none py-3'>
+      <Image src={Logo} alt='logo' width={30} height={30} className='mr-4' />
       <NavigationMenuList>
         <NavigationMenuItem>
           <NavigationMenuTrigger>Getting started</NavigationMenuTrigger>

@@ -1,7 +1,7 @@
 /*
  * @Date: 2024-10-28 15:08:09
  * @LastEditors: LaughingZhu
- * @LastEditTime: 2024-10-29 15:23:20
+ * @LastEditTime: 2024-10-29 16:58:23
  * @Description:
  */
 import Aside from '@/components/Aside';
@@ -18,8 +18,8 @@ export default async function Stack({ params }: { params: Promise<Params> }) {
   const formatStacks = formatDataByCategory(stacks?.children || []);
   return (
     <>
-      <Aside />
-      <div className='screen- flex flex-auto overflow-y-auto overflow-x-hidden'>
+      <Aside slug={slug} />
+      <div className='z-0 ml-4 flex flex-auto overflow-y-auto overflow-x-hidden'>
         {!stacks ? (
           <div>null</div>
         ) : (
