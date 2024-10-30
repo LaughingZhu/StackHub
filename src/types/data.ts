@@ -1,7 +1,7 @@
 /*
  * @Date: 2024-10-28 15:36:46
  * @LastEditors: LaughingZhu
- * @LastEditTime: 2024-10-29 15:55:31
+ * @LastEditTime: 2024-10-30 15:41:45
  * @Description:
  */
 
@@ -27,5 +27,6 @@ export interface Data {
 export enum DateCategory {
   Framework = 'Framework',
   Ui = 'Ui',
-  Server = 'Server'
+  Server = 'Server',
+  Builder = 'Builder'
 }
