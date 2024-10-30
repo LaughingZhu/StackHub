@@ -1,7 +1,7 @@
 /*
  * @Date: 2024-10-28 13:56:27
  * @LastEditors: LaughingZhu
- * @LastEditTime: 2024-10-29 21:48:02
+ * @LastEditTime: 2024-10-30 10:52:40
  * @Description:
  */
 import { DateCategory } from '@/types/data';
@@ -129,6 +129,33 @@ export default [
       stars: '11k',
       forks: '431',
       owner: 'NextUI Inc'
+    }
+  },
+  {
+    name: 'Ant Design',
+    desc_zh:
+      'Antd 是基于 Ant Design 设计体系的 React UI 组件库，适合企业级中后台产品与前台桌面网站。',
+    home: 'https://ant-design.antgroup.com/index-cn',
+    category: DateCategory.Ui,
+    logo: 'https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg',
+    repoInfo: {
+      github: 'https://github.com/ant-design/ant-design',
+      stars: '92.3k',
+      forks: '49.5',
+      owner: 'Ant Design Team'
+    }
+  },
+  {
+    name: 'Chakra UI',
+    desc_zh: '用于构建高质量 Web 应用程序和设计系统的可访问 React 组件。与 Next.js RSC 配合使用',
+    category: DateCategory.Ui,
+    home: 'https://www.chakra-ui.com/',
+    logo: 'https://www.chakra-ui.com/favicon.ico',
+    repoInfo: {
+      github: 'https://github.com/chakra-ui/chakra-ui',
+      stars: '37.7k',
+      forks: '3.2k',
+      owner: 'Chakra UI'
     }
   }
 ];

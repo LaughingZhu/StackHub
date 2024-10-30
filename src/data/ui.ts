@@ -1,7 +1,7 @@
 /*
  * @Date: 2024-10-28 13:56:27
  * @LastEditors: LaughingZhu
- * @LastEditTime: 2024-10-29 23:27:49
+ * @LastEditTime: 2024-10-30 11:05:58
  * @Description:
  */
 import { DateCategory } from '@/types/data';
@@ -20,20 +20,7 @@ export default [
       owner: 'Tailwind Labs'
     }
   },
-  {
-    name: 'UnoCSS',
-    desc_zh:
-      '完全无样式、完全可访问的 UI 组件，旨在与 Tailwind CSS 完美集成。',
-    home: 'https://headlessui.com/',
-    category: DateCategory.Ui,
-    logo: 'https://headlessui.com/favicon.ico',
-    repoInfo: {
-      github: 'https://github.com/tailwindlabs/headlessui',
-      stars: '26k',
-      forks: '1.1k',
-      owner: 'Tailwind Labs'
-    }
-  },
+
   {
     name: 'UnoCSS',
     desc_zh:
@@ -48,4 +35,30 @@ export default [
       owner: 'UnoCSS'
     }
   },
+  {
+    name: 'HeadlessUI',
+    desc_zh: '完全无样式、完全可访问的 UI 组件，旨在与 Tailwind CSS 完美集成。',
+    home: 'https://headlessui.com/',
+    category: DateCategory.Ui,
+    logo: 'https://headlessui.com/favicon.ico',
+    repoInfo: {
+      github: 'https://github.com/tailwindlabs/headlessui',
+      stars: '26k',
+      forks: '1.1k',
+      owner: 'Tailwind Labs'
+    }
+  },
+  {
+    name: 'ark',
+    desc_zh: 'Ark UI 是一个无头库，用于构建可重用、可扩展的设计系统，适用于各种 JS 框架。',
+    home: 'https://ark-ui.com/',
+    category: DateCategory.Ui,
+    logo: 'https://ark-ui.com/favicon.ico',
+    repoInfo: {
+      github: 'https://github.com/chakra-ui/ark',
+      stars: '3.7k',
+      forks: '103',
+      owner: 'Chakra UI'
+    }
+  }
 ];
